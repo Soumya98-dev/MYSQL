@@ -1,0 +1,10 @@
+CREATE DATABASE ERDemo;
+USE ERDIA;
+
+CREATE TABLE Professor(
+    ProfID INT PRIMARY KEY AUTO_INCREMENT,
+    Since DATE,
+    Status VARCHAR(50),
+    DeptID INT,
+    FOREIGN KEY (DeptID) REFERENCES Department
+);
